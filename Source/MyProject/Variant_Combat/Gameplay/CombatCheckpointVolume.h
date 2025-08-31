@@ -1,32 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "Components/BoxComponent.h"
-#include "CombatCheckpointVolume.generated.h"
-
-UCLASS(abstract)
-class ACombatCheckpointVolume : public AActor
-{
-	GENERATED_BODY()
-	
-	/** Collision box volume */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Components, meta = (AllowPrivateAccess = "true"))
-	UBoxComponent* Box;
-
-public:	
-	
-	/** Constructor */
-	ACombatCheckpointVolume();
-
-protected:
-
-	/** Set to true after use to avoid accidentally resetting the checkpoint */
-	bool bCheckpointUsed = false;
-
-	/** Handles overlaps with the box volume */
-	UFUNCTION()
-	void OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a3dbc4c4fe7f96f187c1d862d79b3694368ecc84fffb50a308022dbdd8544b7
+size 875

@@ -1,24 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
-#include "AnimNotify_CheckCombo.generated.h"
-
-/**
- *  AnimNotify to perform a combo string check.
- */
-UCLASS()
-class UAnimNotify_CheckCombo : public UAnimNotify
-{
-	GENERATED_BODY()
-	
-public:
-
-	/** Perform the Anim Notify */
-	virtual void Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference) override;
-
-	/** Get the notify name */
-	virtual FString GetNotifyName_Implementation() const override;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d22dfc5fb7ed594853c894566378529d535dc00d910e1b9d5ca06d0b4237d98
+size 602

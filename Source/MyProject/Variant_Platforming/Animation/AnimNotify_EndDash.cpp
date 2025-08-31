@@ -1,21 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-
-#include "AnimNotify_EndDash.h"
-#include "PlatformingCharacter.h"
-#include "Components/SkeletalMeshComponent.h"
-
-void UAnimNotify_EndDash::Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference)
-{
-	// cast the owner to the attacker interface
-	if (APlatformingCharacter* PlatformingCharacter = Cast<APlatformingCharacter>(MeshComp->GetOwner()))
-	{
-		// tell the actor to end the dash
-		PlatformingCharacter->EndDash();
-	}
-}
-
-FString UAnimNotify_EndDash::GetNotifyName_Implementation() const
-{
-	return FString("End Dash");
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a591b4abb04dd33bbff331b83938feac6316c74768196a2a68a4d0077f53ad5
+size 640

@@ -1,19 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-
-#include "SideScrollingAIController.h"
-#include "GameplayStateTreeModule/Public/Components/StateTreeAIComponent.h"
-
-ASideScrollingAIController::ASideScrollingAIController()
-{
-	// create the StateTree AI Component
-	StateTreeAI = CreateDefaultSubobject<UStateTreeAIComponent>(TEXT("StateTreeAI"));
-	check(StateTreeAI);
-
-	// ensure we start the StateTree when we possess the pawn
-	bStartAILogicOnPossess = true;
-
-	// ensure we're attached to the possessed character.
-	// this is necessary for EnvQueries to work correctly
-	bAttachToPawn = true;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd8e31b7882e805415ad99128075814bd30bf8a3a39f329697e740d4797108cb
+size 597

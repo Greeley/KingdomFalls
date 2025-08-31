@@ -1,15 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-using UnrealBuildTool;
-using System.Collections.Generic;
-
-public class MyProjectTarget : TargetRules
-{
-	public MyProjectTarget(TargetInfo Target) : base(Target)
-	{
-		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V5;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;
-		ExtraModuleNames.Add("MyProject");
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b475931b0eb457def83eefa3e6de030ae3b04ec743279d2d6ace3fd772bae3b
+size 395

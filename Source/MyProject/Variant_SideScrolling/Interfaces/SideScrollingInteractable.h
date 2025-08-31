@@ -1,31 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "UObject/Interface.h"
-#include "SideScrollingInteractable.generated.h"
-
-/**
- *  
- */
-UINTERFACE(MinimalAPI, NotBlueprintable)
-class USideScrollingInteractable : public UInterface
-{
-	GENERATED_BODY()
-};
-
-/**
- *  Simple interface to allow Actors to interact without having knowledge of their internal implementation.
- */
-class ISideScrollingInteractable
-{
-	GENERATED_BODY()
-
-public:
-
-	/** Triggers an interaction by the provided Actor */
-	UFUNCTION(BlueprintCallable, Category="Interactable")
-	virtual void Interaction(AActor* Interactor) = 0;
-
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:dbe64b4b3c06a0e4609562d9dc74a7a64ab2fad6228887f43717f84db6a7152d
+size 646

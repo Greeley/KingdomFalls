@@ -1,24 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "Animation/AnimNotifies/AnimNotify.h"
-#include "AnimNotify_EndDash.generated.h"
-
-/**
- *  AnimNotify to finish the dash animation and restore player control
- */
-UCLASS()
-class UAnimNotify_EndDash : public UAnimNotify
-{
-	GENERATED_BODY()
-	
-public:
-
-	/** Perform the Anim Notify */
-	virtual void Notify(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference) override;
-
-	/** Get the notify name */
-	virtual FString GetNotifyName_Implementation() const override;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0cab6e72ca62f23d655281b0dd064f8a6d9537dbb3a615bdd3b51c9689570c9
+size 619

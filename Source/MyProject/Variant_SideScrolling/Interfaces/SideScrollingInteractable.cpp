@@ -1,6 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-
-#include "SideScrollingInteractable.h"
-
-// Add default functionality here for any IInteractable functions that are not pure virtual.
+version https://git-lfs.github.com/spec/v1
+oid sha256:000adf86554e3180cd8680d1d4d11201323bb6b900d854b4527264586752848f
+size 186

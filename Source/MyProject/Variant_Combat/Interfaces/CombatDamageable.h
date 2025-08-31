@@ -1,36 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "UObject/Interface.h"
-#include "CombatDamageable.generated.h"
-
-/**
- *  CombatDamageable interface
- *  Provides functionality to handle damage, healing, knockback and death
- */
-UINTERFACE(MinimalAPI, NotBlueprintable)
-class UCombatDamageable : public UInterface
-{
-	GENERATED_BODY()
-};
-
-class ICombatDamageable
-{
-	GENERATED_BODY()
-
-public:
-
-	/** Handles damage and knockback events */
-	UFUNCTION(BlueprintCallable, Category="Damageable")
-	virtual void ApplyDamage(float Damage, AActor* DamageCauser, const FVector& DamageLocation, const FVector& DamageImpulse) = 0;
-
-	/** Handles death events */
-	UFUNCTION(BlueprintCallable, Category="Damageable")
-	virtual void HandleDeath() = 0;
-
-	/** Handles healing events */
-	UFUNCTION(BlueprintCallable, Category="Damageable")
-	virtual void ApplyHealing(float Healing, AActor* Healer) = 0;
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc476c3206d8efb9eab832e98da8a19f2432babb5d2398fec48bf7cbe740818f
+size 931
